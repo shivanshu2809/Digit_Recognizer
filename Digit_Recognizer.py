@@ -20,6 +20,6 @@ preds=pd.DataFrame(pred)
 sub_df=pd.read_csv("C:\\Users\\DELL\\Desktop\\Excelr Hyd\\Kaggle\\Digit Recognizer\\sample_submission.csv")
 datasets=pd.concat([sub_df["ImageId"],preds],axis=1)
 datasets.columns=["ImageId","Label"]
-datasets.to_csv("Digit_submission.csv",index=False
+datasets.to_csv("Digit_submission.csv",index=False)
 
 # Kaggle Score for this model is 0.96371
